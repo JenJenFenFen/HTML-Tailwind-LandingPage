@@ -10,53 +10,73 @@
     <script src="tailwind.config.js"></script>
 </head>
 <body>
-    <nav class="flex sticky top-0 items-center justify-between flex-wrap bg-pink-600 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <span class="font-semibold text-3xl pl-5 tracking-tight">Jennyver.com</span>
+
+  <!-- navigation -->
+  <nav class="flex sticky top-0 items-center justify-between flex-wrap bg-pink-600 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <span class="font-semibold text-3xl pl-5 tracking-tight">Jennyver.com</span>
+      </div>
+      <div class="w-full block flex-row-reverse lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm">
+          <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+            Home
+          </a>
+          <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+            About
+          </a>
+          <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+            Contact Me
+          </a>
         </div>
-        <div class="w-full block flex-row-reverse lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm">
-            <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
-              Home
-            </a>
-            <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
-              About
-            </a>
-            <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
-              Contact Me
-            </a>
-          </div>
-        </div>
-    </nav>
-
-    <div class="h-screen">
-      <div class="pt-32 text-center animate-fade-in-down">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hello,</span></p>
       </div>
+  </nav>
 
-      <div class="mt-3 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 1000ms;">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">My name is Jennyver Seztiani Luxman.</span></p>
-      </div>
-
-      <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 2000ms;">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">I just begin to learn about Full Stack Web.</span></p>
-      </div>
-
-      <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 3000ms;">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">This is my simple landing page and I'm using HTML and Tailwind for CSS.</span></p>
-      </div>
-
-      <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 4000ms;">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hope you enjoy :D</span></p>
-      </div>
+  <!-- text and animation -->
+  <div class="h-screen bg-white container">
+    <div class="pt-32 text-center animate-fade-in-down">
+      <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hello,</span></p>
     </div>
 
-    <div class="h-screen bg-no-repeat bg-bottom bg-fixed" style="background-image: url(Foto.png)"></div>
+    <div class="mt-3 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 1000ms;">
+      <p><span class="font-semibold text-3xl tracking-tight text-pink-600">My name is Jennyver Seztiani Luxman.</span></p>
+    </div>
 
-    <div class="h-screen bg-no-repeat bg-right-top" style="background-image: url(Foto2.jpeg);">
-      <div class="bg-gray-700 absolute w-1/2">
-        <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hello,</span></p>
+    <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 2000ms;">
+      <p><span class="font-semibold text-3xl tracking-tight text-pink-600">I just begin to learn about Full Stack Web.</span></p>
+    </div>
+
+    <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 3000ms;">
+      <p><span class="font-semibold text-3xl tracking-tight text-pink-600">This is my simple landing page and I'm using HTML and Tailwind for CSS.</span></p>
+    </div>
+
+    <div class="mt-5 text-center animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 4000ms;">
+      <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hope you enjoy :D</span></p>
+    </div>
+
+    <div class="flex justify-center mt-20 animate-fade-in-down" style="animation-fill-mode: both; animation-delay: 5000ms;">
+      <div class="animate-bounce bg-pink-600 dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full items-center justify-center bg-fixed">
+        <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
     </div>
+  </div>
+
+  <!-- background fixed -->
+  <div class="h-screen bg-no-repeat bg-bottom bg-fixed" style="background-image: url(Foto.png)"></div>
+
+  <!-- next slide -->
+  <div id="h3" class="h-screen bg-no-repeat bg-right-top" style="background-image: url(Foto2.jpeg);">
+    <div class="flex w-full items-center justify-between lg:absolute">
+      <div class="block flex-column-reverse lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:ml-630px lg:mt-200px p-6 rounded-lg lg:backdrop-blur-sm bg-slate-800">
+          <p><span class="font-semibold text-3xl tracking-tight text-pink-600">My name is Jennyver Seztiani Luxman</span></p>
+          <p class="mt-5"><span class="font-semibold text-3xl tracking-tight text-pink-600">My friend always call me Jenny or Jenjen</span></p>
+          <p class="mt-5"><span class="font-semibold text-3xl tracking-tight text-pink-600">I'm (absolutely) female XD</span></p>
+          <p class="mt-5"><span class="font-semibold text-3xl tracking-tight text-pink-600">I was born at Palembang</span></p>
+          <p class="mt-5"><span class="font-semibold text-3xl tracking-tight text-pink-600">My birthday is September, 21th 1996</span></p>
+        </div>
+    </div>
+  </div>
 </body>
 </html>

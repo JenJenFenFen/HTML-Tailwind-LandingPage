@@ -17,6 +17,10 @@ tailwind.config = {
       animation: {
         'fade-in-down': 'fade-in-down 1s ease-out'
       },
+      margin: {
+        '630px': '630px',
+        '200px': '200px'
+      }
     },
   },
   variants: {},
