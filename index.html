@@ -18,13 +18,13 @@
     </div>
     <div class="w-full block flex-row-reverse lg:flex lg:items-center lg:w-auto">
       <div class="text-sm">
-        <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+        <a class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10" id="href1">
           Home
         </a>
-        <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+        <a class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10" id="href2">
           About
         </a>
-        <a href="#responsive-header" class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
+        <a class="block mt-4 text-lg lg:inline-block lg:mt-0 text-white hover:text-white mr-10">
           Contact Me
         </a>
       </div>
@@ -32,7 +32,7 @@
   </nav>
 
   <!-- text and animation -->
-  <div class="h-screen bg-white container">
+  <div class="h-screen bg-white container" id="pagehome">
     <div class="pt-32 text-center animate-fade-in-down">
       <p><span class="font-semibold text-3xl tracking-tight text-pink-600">Hello,</span></p>
     </div>
@@ -93,6 +93,8 @@
     // unanble scroll after finish animation
     setTimeout(function () {
       $("body").css("overflow", "auto");
+      $("#href1").attr("href", "#pagehome");
+      $("#href2").attr("href", "#h3");
     }, 6000);
   });
 </script>
